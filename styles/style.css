@@ -7,20 +7,163 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
+  display: flex;
+
 }
 
+.logo {
+  width: 228px;
+  height: 32px;
+  background-image: url(../images/logo_place_header.svg);
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+
+}
+
+.header__title {
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  /* margin: auto; */
+  margin-left: 64px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  z-index: 5;
+
+}
+
+.header__subtitle{
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.link {
+  text-decoration:none;
+  color: #2f80ed;
+}
+
+.header__main-illustration{
+  width: 765px;
+  height: 608px;
+  background-image: url(../images/header-image.png);
+  background-size: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
 }
+
+
+.description {
+
+  width: 80%;
+
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+
+}
+
+.two-columns {
+  display: flex;
+
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph {
+  width: 80%;
+  min-width: 784px;
+  min-height: 100%;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.span {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.two-columns__margin-bottom {
+  margin-bottom: 30px;
+}
+
+.two-columns__no-margin-bottom {
+  margin-bottom: 0;
+}
+
+
+.digits {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid #2f80ed;
+}
+.section-title{
+width: 60%;
+margin: auto;
+border: 2px solid #2f80ed;
+}
+
+.section-subtitle {
+  width: 60%;
+  margin: auto;
+  border: 2px solid #2f80ed;
+
+}
+
+.table {
+  width: 1100px;
+  border: 2px solid #2f80ed;
+}
+
+.table__cell {
+  margin-top: 60px;
+  width: 250px;
+  border: 2px solid #2f80ed;
+;
+}
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
