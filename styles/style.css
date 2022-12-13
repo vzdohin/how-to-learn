@@ -90,7 +90,7 @@
 }
 
 .two-columns__brief {
-  min-width: 175px;
+  max-width: 175px;
   margin: 0;
   line-height: 1.2;
   font-size: 18px;
@@ -133,7 +133,7 @@
 .section-title{
 width: 60%;
 margin: auto;
-margin-top: 100px;
+margin-top: 0;
 margin-bottom: 20px;
 text-align: center;
 line-height: 1.15;
@@ -246,7 +246,6 @@ font-weight: 600;
 
 .section-subtitle_theme_dark {
   color: #FFFFFF;
-  margin-top: 20px;
 }
 
 .table__cell_theme_dark {
@@ -279,6 +278,7 @@ font-weight: 600;
   height: 877px;
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   right: -210px;
   top: 0;
@@ -288,22 +288,24 @@ font-weight: 600;
 .footer {
   min-height: 350px;
   display: flex;
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
   object-fit: cover;
-  flex-direction: column;
-  align-items: center;
 }
-
+/* !!!!! */
 .footer__columns {
   width: 90%;
   color: #FFFFFF;
   display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer__column {
-  width: 90%;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -330,15 +332,8 @@ font-weight: 600;
   font-weight: normal;
 }
 
-.footer__column_content_info {
-  align-items: flex-end;
-}
-
 .footer__column-heading {
-  margin-top: 0;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -346,16 +341,17 @@ font-weight: 600;
 
 .footer__column_content_social {
   color: #FFFFFF;
-  align-items: flex-end;
 }
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
 }
 
 .footer__column-links {
-  max-width: 100%;
+  padding: 0;
+  margin: 20px 0 16px 0;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -370,7 +366,6 @@ font-weight: 600;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 16px;
   color: #FFFFFF;
   text-decoration:none;
   list-style-type: none;
